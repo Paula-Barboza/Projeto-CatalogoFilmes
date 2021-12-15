@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IM+Fell+English+SC&display=swap');
+
+*{
+    margin: 0px;
+    font-family:'Bebas Neue', cursive;
+    padding:0px;
+}
+
+body {
+    background-color:rgba(65, 1, 1, 0.849);
+}
+
+
+header {
+    width: 100%;
+}
+
+
+
+a {
+    color: #ffff;
+    text-decoration: none;
+
+    transition-duration: 1.3s;
+}
+ 
+a:hover {
+    color: rgba(145, 144, 144, 0.418);
+}
+
+.catalogo  {
+    display: flex; /* Coloca o logo e a lista um do lado do outro */
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(22, 22, 22);
+    height: 8vh; /* unidade responsiva que adapta a altura a altura da janela de vizualição du usuário*/
+}
+
+.logo {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(133, 32, 32);
+    text-shadow: 5px 5px 5px  rgba(78, 77, 77, 0.589); /*  Efeito de sombra na fonte */; 
+}
+
+.lista {
+    list-style: none;
+    display: flex;  
+}
+
+.lista li {
+    letter-spacing: -1px; /* Espaçamento entre caracteres de texto*/
+    margin-left: 32px;
+    font-size:25px ;
+} 
+
+.imgcapa {
+    width: 100%;
+    height:auto;
+    border: 4px black solid;
+}
+
+main{
+    width: 100%;
+    margin: 8px auto;
+}
+
+.destaques {
+    color: black;
+    margin: 15px;
+    text-align: center;
+
+    transition-duration: 1.5s;
+}
+
+.destaques:hover{
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.gridtop {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+    margin-left: 5%; 
+}
+
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item {
+    box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.46);
+    transition: 0.5s;
+}
+
+.grid-item:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+
+    box-shadow: 5px 5px 15px 5px rgb(133, 32, 32);
+}
+
+
+.animações {
+    border-radius: 1%;
+    border: 2px black solid;
+}
+
+
+
+
+.legenda {
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    background-color: rgba(0, 0, 0, 0.666);
+    border: black 2px solid;
+    border-radius: 2%;
+    width: 100%;
+   
+
+
+    transition-duration: 1.5s;
+}
+
+
+
+.legenda:hover {
+    color: rgb(60, 58, 58);
+}
+
+footer {
+    text-align: center;
+    background: black;
+    color: #ffff;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .gridtop {
+        display: inline-grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 30px;
+        margin-left:15%; 
+    }
+ 
+    .catalogo  {
+        display: flex; /* Coloca o logo e a lista um do lado do outro */
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        background: rgb(22, 22, 22);
+        width: auto;
+    }
+}
+
+
+
